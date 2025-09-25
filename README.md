@@ -1,2 +1,2 @@
-# Python-basics-refresher
-These are files I created to refresh my knowledge of Python. Even though I had worked with python extensively across internships, research and my work experience, I just wanted to make sure my foundations are correct. I didn't want to continue with any false assumptions while coding, as I did not have an exact academic background in CS.
+📘 Python Refresher
+This repository contains files I created to refresh and reinforce my understanding of Python. Although I’ve worked extensively with Python across internships, research projects, and professional roles, I wanted to revisit the fundamentals to ensure a solid foundation. Since I don’t come from a formal computer science background, this was a way to clear any lingering gaps and avoid carrying forward false assumptions in future projects.
