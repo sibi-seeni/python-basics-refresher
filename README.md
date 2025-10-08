@@ -19,7 +19,7 @@ In Week 1, I focused on strengthening my understanding of control flow (`if/else
 
 In Week 2, I explored the use of lists and dictionaries to store and manipulate data. I created two main Python files: one for data processing using a dictionary to track frequency, and another for a game that uses a nested list (list of lists) to represent a game board.
 
-1. **Count words**:
+1. **Count Words**:
 This script is a word frequency counter. It prompts the user to enter a phrase or sentence, then processes the input by splitting it into a list of words. It utilizes the build_dictionary function to create a dictionary where each unique word is a key and its count (frequency) is the corresponding value. Finally, it prints the word-frequency pairs, ensuring they are displayed in alphabetical order by iterating through the sorted keys of the dictionary.
 
 2. **Connect4 Game**
@@ -34,5 +34,23 @@ This script implements the classic game `Connect Four`. It uses a nested list (a
    `checkWin` implements the complex logic for checking horizontal, vertical, and diagonal wins by iterating and slicing through the nested list structure.
    
    The main game loop alternates turns until a win or a tie (full board) is detected.
+   
+---
+
+### Week 3: Introduction to DataFrames with Pandas 🐼
+
+This week, I explored the basics of the **pandas** library, a fundamental tool for data manipulation and analysis in Python. The focus was on understanding how to create, inspect, and analyze data stored in DataFrames. I completed two scripts to practice these skills.
+
+* **BMI Calculator & Storing in DataFrame**: This script is an interactive Body Mass Index (BMI) calculator. It showcases the dynamic creation of a pandas DataFrame from scratch.
+    * It prompts the user to enter their age, weight (in lbs), and height (in cm) within a loop.
+    * For each entry, it calculates the BMI, assigns a weight category (e.g., healthy, overweight), and appends the results to Python lists.
+    * After each calculation, it converts a dictionary of these lists into a **pandas DataFrame**, printing the updated table to the console. This demonstrates how to build a DataFrame row-by-row from user input.
+
+* **Ramen Ratings Analysis**: This project involved performing exploratory data analysis on "The Ramen Rater" dataset from Kaggle. This notebook demonstrates a more practical, analysis-focused workflow. Key pandas operations practiced include:
+    * **Loading Data**: Reading a `.csv` file directly into a DataFrame.
+    * **Data Inspection**: Using `.head()`, `.tail()`, and `.describe()` to get a quick overview and statistical summary of the data.
+    * **Filtering & Sorting**: Selecting specific columns, querying rows based on conditions (like finding all ramen from "Vietnam"), and sorting the data by review scores (`.sort_values()`).
+    * **Data Cleaning**: Replacing values in a column, such as changing "USA" to "United States" using `.replace()`.
+    * **Aggregation**: Using `.groupby()` combined with `.mean()` and `.nunique()` to answer analytical questions, such as finding the countries with the highest average ratings and the most unique brands.
    
 ---
