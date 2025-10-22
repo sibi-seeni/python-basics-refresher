@@ -1,5 +1,3 @@
-# File: SS_Lab_Week8A.py
-# Date: 10/17/2025
 #   A program to access a file and calculate mpg
 #
 # by: Sibi Seenivasan
