@@ -49,3 +49,20 @@ This week, I explored the basics of the **pandas** library, a fundamental tool f
     * **Aggregation**: Using `.groupby()` combined with `.mean()` and `.nunique()` to answer analytical questions, such as finding the countries with the highest average ratings and the most unique brands.
    
 ---
+
+### Week 4: Handling Files and Starting OOP 📁
+
+This week marked a significant step in my Python journey as I explored two key areas: **file I/O** (Input/Output) for persistent data storage and the principles of **Object-Oriented Programming (OOP)** through the creation of classes.
+
+1. **MPG Calculation with Files**: This project extended a basic miles-per-gallon calculator to read from and write to an external text file (`trips.txt`).
+    * **File I/O**: The script uses a tab-delimited file to store trip data. The `read_trips` function demonstrates opening a file in read mode (`"r"`), skipping the header line, reading line-by-line, and parsing the data into a list of lists. The `write_trips` function handles opening the file in write mode (`"w"`) and overwriting it with the updated list of trips, including the header.
+    * **Data Persistence**: By writing new trips to the file, the program maintains a persistent record of all entries, allowing the data to be loaded and updated across multiple runs.
+    * **List Manipulation**: New calculated trips are temporarily appended to a list of lists before being written back to the file.
+
+2. **Battle Simulation (OOP)**: This project introduces the core concepts of Object-Oriented Programming by simulating a fantasy battle between heroes and a monster (Needless to say I am a huge LOTR fan ✨).
+    * **Classes & Inheritance**: It defines a base class, **`Character`**, which includes fundamental attributes (name, HP, attack, defense) and methods (like `attack` and `show_status`).
+    * **Subclasses**: It then creates two specialized subclasses, **`Hero`** and **`Monster`**, which inherit all properties and methods from `Character`.
+    * **Polymorphism & Special Moves**: Each subclass implements its own unique `special_move` method, demonstrating polymorphism. For instance, the **Healer Hero** restores HP, the **Warrior Hero** deals triple damage, and the **Boss Monster** reduces a target's attack power.
+    * **Encapsulation**: Attributes like HP and ATK are bundled within the character objects, and their state is managed through class methods, providing a clean object structure. The `main` function then instantiates these classes to create a battle scenario.
+  
+---
