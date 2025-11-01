@@ -67,7 +67,7 @@ This week marked a significant step in my Python journey as I explored two key a
   
 ---
 
-## Week 5: Linear Algebra and NumPy 🧠
+## Week 5: Linear Algebra and NumPy
 
 This week was a deep dive into the practical application of **linear algebra** using **NumPy**, focusing on vector and matrix operations that are foundational to data science and machine learning.
 
@@ -82,4 +82,20 @@ This week was a deep dive into the practical application of **linear algebra** u
 * **Time Series Filtering (Convolution)**
     * I used the `np.convolve` function to demonstrate **convolution** in a 1D context. I successfully applied a custom **smoothing kernel** (for denoising) and a **sharpening kernel** (for edge enhancement), showing how different kernels filter the signal.
 
-***
+---
+
+## Week 6: Implementing Regression from Scratch 📈
+
+Building on linear algebra, this week focused on implementing **Ordinary Least Squares (OLS) Linear Regression** and comparing a mathematical "from scratch" solution with established library methods.
+
+* **Closed-Form OLS Implementation**
+    * The project successfully implemented the **left-inverse** (or normal equation) solution for the $\mathbf{\beta}$ coefficients: $\mathbf{\beta} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}$.
+    * The "from scratch" left-inverse method was validated against two standard methods: **NumPy's `np.linalg.lstsq`** and **`statsmodels` OLS**. All three methods produced identical results for the $\mathbf{R}^2$ and $\mathbf{\beta}$ coefficients, confirming the implementation.
+* **Regularization (Ridge Regression)**
+    * To address the issue of an ill-conditioned matrix caused by multicollinearity, I implemented **Ridge Regression** from scratch. This involved adding a regularization term ($\gamma \mathbf{I}$) to the normal equation: $\mathbf{\beta} = (\mathbf{X}^T\mathbf{X} + \gamma \mathbf{I})^{-1}\mathbf{X}^T\mathbf{y}$.
+    * I plotted the $\mathbf{R}^2$ fit across a range of regularization strengths ($\gamma$), which showed that the rank of the regularized matrix remains high and the fit decreases as the penalty is increased.
+* **Polynomial Regression for Non-Linear Data**
+    * The final exercise explored fitting a non-linear trend using different orders of **polynomial regression**.
+    * By fitting polynomials up to order $N-1$, the plots visually illustrated how high-order polynomials, while fitting the training data perfectly, tend to be overly complex, demonstrating the concept of **overfitting**.
+ 
+---
