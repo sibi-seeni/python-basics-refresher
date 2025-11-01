@@ -66,3 +66,20 @@ This week marked a significant step in my Python journey as I explored two key a
     * **Encapsulation**: Attributes like HP and ATK are bundled within the character objects, and their state is managed through class methods, providing a clean object structure. The `main` function then instantiates these classes to create a battle scenario.
   
 ---
+
+## Week 5: Linear Algebra and NumPy 🧠
+
+This week was a deep dive into the practical application of **linear algebra** using **NumPy**, focusing on vector and matrix operations that are foundational to data science and machine learning.
+
+* **Vector Operations: Decomposition & Similarity**
+    * I implemented code to break down a vector ($\mathbf{t}$) into two components: one **parallel** ($\mathbf{t}_{\parallel}$) and one **orthogonal** ($\mathbf{t}_{\perp}$) to a reference vector ($\mathbf{r}$), which is fundamental for understanding basis sets in vector spaces.
+    * I created a function to compute both **Correlation** and **Cosine Similarity**. The comparison plot showed how **Correlation** remains invariant to adding a mean offset, demonstrating its focus on relationship shape rather than absolute values.
+* **Matrix Properties**
+    * I verified core algebraic principles, such as the distributive property for matrix multiplication and scalar values.
+    * I explored **matrix rank** and verified the property that $\text{rank}(\mathbf{A}) = \text{rank}(\mathbf{A}^T\mathbf{A})$ for random matrices.
+    * I showed that introducing linear dependency into a matrix causes its **determinant** to become zero, illustrating the connection between rank and the mapping of space.
+    * I used matrix algebra to calculate the **pseudoinverse** (or right-inverse) $\mathbf{J}$ for a wide matrix $\mathbf{A}$, verifying the defining property $\mathbf{A}\mathbf{J} = \mathbf{I}$.
+* **Time Series Filtering (Convolution)**
+    * I used the `np.convolve` function to demonstrate **convolution** in a 1D context. I successfully applied a custom **smoothing kernel** (for denoising) and a **sharpening kernel** (for edge enhancement), showing how different kernels filter the signal.
+
+***
