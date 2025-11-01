@@ -67,7 +67,7 @@ This week marked a significant step in my Python journey as I explored two key a
   
 ---
 
-## Week 5: Linear Algebra and NumPy
+### Week 5: Linear Algebra and NumPy
 
 This week was a deep dive into the practical application of **linear algebra** using **NumPy**, focusing on vector and matrix operations that are foundational to data science and machine learning.
 
@@ -84,7 +84,7 @@ This week was a deep dive into the practical application of **linear algebra** u
 
 ---
 
-## Week 6: Implementing Regression from Scratch 📈
+### Week 6: Implementing Regression from Scratch 📈
 
 Building on linear algebra, this week focused on implementing **Ordinary Least Squares (OLS) Linear Regression** and comparing a mathematical "from scratch" solution with established library methods.
 
