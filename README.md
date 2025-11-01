@@ -72,7 +72,7 @@ This week marked a significant step in my Python journey as I explored two key a
 This week was a deep dive into the practical application of **linear algebra** using **NumPy**, focusing on vector and matrix operations that are foundational to data science and machine learning.
 
 * **Vector Operations: Decomposition & Similarity**
-    * I implemented code to break down a vector ($\mathbf{t}$) into two components: one **parallel** ($\mathbf{t}_{\parallel}$) and one **orthogonal** ($\mathbf{t}_{\perp}$) to a reference vector ($\mathbf{r}$), which is fundamental for understanding basis sets in vector spaces.
+    * I implemented code to break down a vector ($\mathbf{t}$) into two components: one **parallel** and one **orthogonal** to a reference vector ($\mathbf{r}$), which is fundamental for understanding basis sets in vector spaces.
     * I created a function to compute both **Correlation** and **Cosine Similarity**. The comparison plot showed how **Correlation** remains invariant to adding a mean offset, demonstrating its focus on relationship shape rather than absolute values.
 * **Matrix Properties**
     * I verified core algebraic principles, such as the distributive property for matrix multiplication and scalar values.
