@@ -99,3 +99,18 @@ Building on linear algebra, this week focused on implementing **Ordinary Least S
     * By fitting polynomials up to order $N-1$, the plots visually illustrated how high-order polynomials, while fitting the training data perfectly, tend to be overly complex, demonstrating the concept of **overfitting**.
  
 ---
+
+### Week 7 Mini-Project: Tic-Tac-Toe Game with Minimax
+
+This week, I completed a mini-project: a fully functional **Tic-Tac-Toe** game featuring two game modes: Player vs. Player (PvP) and Player vs. Computer (PvC). The primary learning goal was to implement a robust, unbeatably strong AI opponent using the **Minimax algorithm**.
+
+* **Minimax AI Implementation**: The logic is contained in helper functions (`_minimax`, `findBestMove`) that allow the computer (Player 'O') to always make the optimal move.
+    * The **`_minimax`** function is a recursive search that explores the entire game tree from the current state.
+    * It assigns **utility scores**: $\mathbf{+10}$ for a computer win (maximizing player), $\mathbf{-10}$ for a human win (minimizing player), and $\mathbf{0}$ for a draw.
+    * The **`findBestMove`** function iterates over all available moves and uses the `_minimax` scores to select the move that leads to the highest-scoring (best) outcome for the computer.
+
+* **Object-Oriented Structure**: The game is built using two main classes for clean separation of responsibilities:
+    * **`Board` Class**: Manages the core game state (a $3\times3$ list of lists) and visualizes the board using `printBoard`.
+    * **`Game` Class**: Manages the game flow, switching turns (`X` and `O`), validating moves, and using the Minimax logic when playing against the computer. This structure keeps the game logic separate from the board's data representation and the AI's decision-making process.
+ 
+---
